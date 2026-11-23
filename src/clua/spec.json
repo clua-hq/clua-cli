@@ -32864,7 +32864,7 @@
       ]
     }
   ],
-  "openapi_sha256": "61c79720d54200fbdc5e1ba5cb8fabd90e5259f22e05d21dae7f5b463386e7ef",
+  "openapi_sha256": "0b5ce910be5ed52aec92bf976fe9f944b31237005d90524c21a10ad80a8e2a27",
   "operation_count": 360,
   "product": "clua",
   "security_scheme": "CluaPersonalAccessToken"
