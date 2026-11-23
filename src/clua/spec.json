@@ -23128,6 +23128,35 @@
           "summary": "Revoke Member Invitation"
         },
         {
+          "body": null,
+          "dangerous": true,
+          "description": "Make a member the owner of the user's workspace.\n\nOnly the owner may hand it over, and only to another member. The member\nbecomes the owner and the former owner an admin, at once. Returns the\nnew owner's membership.",
+          "method": "POST",
+          "name": "transfer-workspace-ownership",
+          "operation_id": "transfer_workspace_ownership",
+          "pagination": null,
+          "parameters": [
+            {
+              "argument": "member_id",
+              "description": null,
+              "location": "path",
+              "name": "member_id",
+              "option": "member-id",
+              "required": true,
+              "schema": {
+                "format": "uuid",
+                "kind": "string",
+                "nullable": false
+              }
+            }
+          ],
+          "path": "/members/{member_id}/transfer-ownership",
+          "response_content_types": [
+            "application/json"
+          ],
+          "summary": "Transfer Workspace Ownership"
+        },
+        {
           "body": {
             "content_type": "application/json",
             "properties": [
@@ -32913,8 +32942,8 @@
       ]
     }
   ],
-  "openapi_sha256": "d6e52747016c563a3625e74b05f77b9d357663d3601e6e1721294f1f3ee3d7c8",
-  "operation_count": 361,
+  "openapi_sha256": "cf3d9dc1b700b03bc9a7cb4dffd45738324db60d7d400233a6b79613f9936859",
+  "operation_count": 362,
   "product": "clua",
   "security_scheme": "CluaPersonalAccessToken"
 }
