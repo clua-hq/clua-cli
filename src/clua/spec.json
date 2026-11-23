@@ -32609,6 +32609,55 @@
         {
           "body": {
             "content_type": "application/json",
+            "properties": [
+              {
+                "argument": "name",
+                "description": null,
+                "name": "name",
+                "option": "name",
+                "required": true,
+                "schema": {
+                  "format": null,
+                  "kind": "string",
+                  "maxLength": 255,
+                  "minLength": 1,
+                  "nullable": false
+                },
+                "sensitive": false
+              }
+            ],
+            "required": true,
+            "schema": {
+              "properties": {
+                "name": {
+                  "maxLength": 255,
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name"
+              ],
+              "type": "object"
+            },
+            "structured": true
+          },
+          "dangerous": true,
+          "description": "Name a workspace for an account that belongs to none.\n\nFor an account that lost its last workspace (removed, or the workspace\nwas deleted). Refused while it still belongs to one: further\nworkspaces are provisioned by an operator.",
+          "method": "POST",
+          "name": "create-own",
+          "operation_id": "create_own_workspace",
+          "pagination": null,
+          "parameters": [],
+          "path": "/workspace",
+          "response_content_types": [
+            "application/json"
+          ],
+          "summary": "Create Own Workspace"
+        },
+        {
+          "body": {
+            "content_type": "application/json",
             "properties": [],
             "required": false,
             "schema": {
@@ -32864,8 +32913,8 @@
       ]
     }
   ],
-  "openapi_sha256": "0b5ce910be5ed52aec92bf976fe9f944b31237005d90524c21a10ad80a8e2a27",
-  "operation_count": 360,
+  "openapi_sha256": "d6e52747016c563a3625e74b05f77b9d357663d3601e6e1721294f1f3ee3d7c8",
+  "operation_count": 361,
   "product": "clua",
   "security_scheme": "CluaPersonalAccessToken"
 }
